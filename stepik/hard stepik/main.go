@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
-	scanner := bufio.NewScanner(os.Stdin)
 	uniq := make([]string, 0)
 	povtor := make([]string, 0)
 	var prev string
 	n := make(map[string]int)
+	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 
 		str := scanner.Text()
